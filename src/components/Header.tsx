@@ -33,11 +33,18 @@ const Header = () => {
             toggleMenu ? "flex" : "hidden"
           } md:flex fixed md:relative top-16 left-0 md:top-auto md:left-auto flex-col md:flex-row bg-blue-300 md:bg-transparent p-4 md:p-0 w-full md:w-auto items-center gap-4 text-md`}
         >
-          {router[0].children.map((route) => (
-            <Link className="block" key={route.path} to={route.path}>
-              {route.element.type.name}
-            </Link>
-          ))}
+          <Link className="block" to={"/"}>
+            Home
+          </Link>
+          <Link className="block" to={"/search-course"}>
+            Courses
+          </Link>
+          <Link className="block" to={"/login"}>
+            Login
+          </Link>
+          <Link className="block" to={"/portal"}>
+            Portal
+          </Link>
         </nav>
         <FaBars
           className="md:hidden cursor-pointer"
