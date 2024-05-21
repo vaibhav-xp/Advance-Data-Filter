@@ -32,7 +32,7 @@ const SelectedFilters = () => {
                     }
                 })}
             </div>
-            <div className='mt-10 flex justify-between'>
+            <div className='mt-10 flex justify-around flex-wrap gap-2'>
                 <div className='flex gap-2'>
                     <button
                         className='bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 outline-none text-center'
