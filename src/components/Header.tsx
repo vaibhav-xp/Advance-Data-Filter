@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className="bg-blue-300">
       <div className="flex container mx-auto justify-between items-center py-6">
-        <div className="text-2xl font-bold">Assignment</div>
+        <div className="text-2xl font-bold">Advance Data Filter</div>
         <nav
           className={`${
             toggleMenu ? "flex" : "hidden"
